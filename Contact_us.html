@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+  
+    <!-- Navbar section  -->
+    <nav class="flex gap-5 items-center justify-between p-3 shadow-md" id="nav_bar">
+        <h1 class="font-extrabold text-3xl ">NOSTRA</h1>
+        <div class="flex gap-5">
+            <p id="header_animation"><a href="index.html">Home</a></p>
+            <p id="header_animation"><a href="new_arrival.html">New Arrival</a></p>
+            <p id="header_animation"><a href="Most_wanted.html">Most Wanted</a></p>
+            <p id="header_animation"><a href="Collection.html">Collections</a></p>
+            <p id="header_animation"><a href="Contact_us.html">Contact Us</a></p>
+        </div>
+    </nav>
+
+  <!-- Contact us section  -->
+<section class="contact-section border bg-slate-100 mt-3">
+  <div class="contact-intro">
+    <h2 class="contact-title">Get in Touch</h2>
+    <p class="contact-description">
+      Fill out the form below and we'll get back to you as soon as possible.
+    </p>
+  </div>
+
+  <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+    <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+    <input type="hidden" name="from_name" value="My Website" />
+    <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+    <div class="form-group-container">
+      <div class="form-group">
+        <label for="name" class="form-label">Name</label>
+        <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="email" class="form-label">Email</label>
+        <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+      </div>
+      <div class="form-group">
+        <label for="phone" class="form-label">Phone</label>
+        <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+      </div>
+      <div class="form-group">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+      </div>
+    </div>
+    <button class="form-submit" type="submit">Send Message</button>
+  </form>
+
+</section>
+    
+<!-- footer section  -->
+     <footer class=" bg-gray-300 flex flex-col items-center justify-center gap-4 text-center p-5">
+
+    <h2 class="text-2xl font-bold">
+        Nostra
+    </h2>
+
+    <p>
+        © 2026-2027 Nostra™. All Rights Reserved.
+        Built with Html, Tailwind CSS, Css, JavaScript.
+    </p>
+
+    <div class="flex gap-4 items-center justify-center">
+        <img src="Images/Logos/footer logo/Whatsapp Logo.png" alt="Whatsapp Logo" class="w-6">
+        
+        <img src="Images/Logos/footer logo/Instagram Logo.png" alt="Instagram Logo" class="w-6">
+        
+        <img src="Images/Logos/footer logo/Linked in Logo.png" alt="Linked In Logo" class="w-6">
+        
+        <img src="Images/Logos/footer logo/Facebook Logo.png" alt="Facebook Logo" class="w-6">
+    </div>
+
+</footer>
+</body>
+
+</html>

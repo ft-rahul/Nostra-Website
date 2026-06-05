@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <title>Nostra: Collections</title>
+</head>
+
+<body>
+
+
+    <!-- Navbar section  -->
+    <nav class="flex gap-5 items-center justify-between p-3 sticky top-0 z-10 bg-white shadow-md" id="nav_bar">
+        <h1 class="font-extrabold text-3xl ">NOSTRA</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 sm:hidden cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <div class="hidden sm:flex gap-5 ">
+            <p id="header_animation"><a href="index.html">Home</a></p>
+            <p id="header_animation"><a href="new_arrival.html">New Arrival</a></p>
+            <p id="header_animation"><a href="Most_wanted.html">Most Wanted</a></p>
+            <p id="header_animation"><a href="Collection.html">Collections</a></p>
+            <p id="header_animation"><a href="Contact_us.html">Contact Us</a></p>
+        </div>
+    </nav>
+
+    <!-- Sidenav bar -->
+    <section id="sidenav" class="bg-white fixed right-0 z-30 transition-all duration-1000"
+        style="width: 50%; height:100%; top:0; right:-50%;">
+        <div class="text-right pr-5">
+            <p id="x-sidenavbar" class="cursor-pointer inline text-xl font-bold">X</p>
+        </div>
+        <ul class="gap-5 text-gray-700 flex flex-col items-center ">
+
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html"> Home </a>
+
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="#new-arrival-section"> New Arrival </a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="#most-wanted-section"> Most Wanted </a>
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="Collection.html"> Collections </a>
+
+            </li>
+
+            <li>
+                <a class="hover:underline hover:text-black" href="Contact_us.html"> Contact Us </a>
+
+            </li>
+
+        </ul>
+    </section>
+
+    <!-- filter,product section  -->
+    <div class="flex">
+
+        <!-- Filter Section -->
+        <div class="hidden md:block w-1/5 p-5 border-r-2 ">
+
+            <!-- Gender filter  -->
+            <h2 class="text-2xl font-bold mb-2">GENDER</h2>
+            <div class="space-y-4 text-lg ml-3">
+
+                <div>
+                    <input type="checkbox" class="gender-filter" value="men"> <label>Men</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="gender-filter" value="women"> <label>Women</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="gender-filter" value="kids"> <label>Kids</label>
+                </div>
+
+            </div>
+
+            <!-- catergory filter  -->
+            <h2 class="text-2xl font-bold mb-2 mt-3">CATEGORIES</h2>
+            <div class="space-y-4 text-lg ml-3">
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="casual"> <label>Casual</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="jean"> <label>Jean</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="kurti"> <label>Kurti</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="jacket"> <label> Jacket </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="gown"> <label> Gown </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="coat"> <label> Coat </label>
+                </div>
+
+            </div>
+
+            <!-- Price filter  -->
+            <h2 class="text-2xl font-bold mb-2 mt-3">PRICE</h2>
+            <div class="space-y-4 ml-3">
+
+                <div>
+                    <input type="checkbox" class="price-filter" value="0-500"> <label> ₹0 - ₹500 </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="price-filter" value="501-1000"> <label>₹501 - ₹1000</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="price-filter" value="1001-1500"> <label>₹1001 - ₹1500</label>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Side Filter Section  -->
+        <section id="side_filter" class="bg-white fixed ml-6 transition-all duration-1000" style="width: 40%; height: 100%; left:-50%;">
+            <div>
+                <p class="text-right text-2xl pr-5 pt-2 font-bold cursor-pointer" id="x-sidefilter">X</p>
+            </div>
+
+           <!-- Gender filter  -->
+            <h2 class="text-xl font-bold mb-2">GENDER</h2>
+            <div class="space-y-4 text ml-3">
+
+                <div>
+                    <input type="checkbox" class="gender-filter" value="men"> <label>Men</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="gender-filter" value="women"> <label>Women</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="gender-filter" value="kids"> <label>Kids</label>
+                </div>
+
+            </div>
+
+            <!-- catergory filter  -->
+            <h2 class="text-xl font-bold mb-2 mt-3">CATEGORIES</h2>
+            <div class="space-y-4 text ml-3">
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="casual"> <label>Casual</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="jean"> <label>Jean</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="kurti"> <label>Kurti</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="jacket"> <label> Jacket </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="gown"> <label> Gown </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="catergories-filter" value="coat"> <label> Coat </label>
+                </div>
+
+            </div>
+
+            <!-- Price filter  -->
+            <h2 class="text-xl font-bold mb-2 mt-3">PRICE</h2>
+            <div class="space-y-4 ml-3">
+
+                <div>
+                    <input type="checkbox" class="price-filter" value="0-500"> <label> ₹0 - ₹500 </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="price-filter" value="501-1000"> <label>₹501 - ₹1000</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" class="price-filter" value="1001-1500"> <label>₹1001 - ₹1500</label>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Product Section -->
+        <div class="w-full p-5">
+
+            <!-- Search Bar -->
+            <div class="border-2 rounded-full px-5 py-3  justify-center items-center flex">
+                <i class="fa-solid fa-filter mr-4 md:hidden cursor-pointer" id="filter_icon"></i>
+                <input type="text" placeholder="Search" class="w-11/12 outline-none" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 lg:grid-cols-4 mt-8 ml-6">
+                <!-- grid grid-cols-4 gap-8 mt-8 ml-6 -->
+
+                <!-- Product 1 -->
+                <div class="product" data-gender="kids" , data-categories="casual" , data-price="599">
+                    <img src="Images/Kids Dress Collection/Kid Shirt -1 (Pine Kids).webp">
+                    <h2 class="product_name"> Sleeveless Party Blazer </h2>
+                    <p>₹599</p>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product" data-gender="women" , data-categories="gown" , data-price="849">
+                    <img src="Images/Most Wanted/photo-2.jpeg">
+                    <h2 class="product_name"> Purple Strapless Ball Gown </h2>
+                    <p>₹849</p>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product" data-gender="women" , data-categories="casual" , data-price="399">
+                    <img src="Images/Women Dress Collection/Boyfriend Jean.jpeg">
+                    <h2 class="product_name"> Boyfriend Jean </h2>
+                    <p>₹399</p>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product" data-gender="men" , data-categories="jacket" , data-price="999">
+                    <img src="Images/Men Dress collection/Men Jacket -2.webp">
+                    <h2 class="product_name"> Blue Puffer Jacket </h2>
+                    <p>₹999</p>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product" data-gender="women" , data-categories="gown" , data-price="863">
+                    <img src="Images/Women Dress Collection/Image -4.jpeg">
+                    <h2 class="product_name"> Strapless Ball Gown White </h2>
+                    <p>₹863</p>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product" data-gender="men" , data-categories="casual" , data-price="250">
+                    <img src="Images/Men Dress collection/Men shirt -2.jpg">
+                    <h2 class="product_name"> White Black Vertical Stripes </h2>
+                    <p>₹250</p>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="product" data-gender="women" , data-categories="kurti" , data-price="249">
+                    <img src="Images/Women Dress Collection/Women kurti -1.jpg">
+                    <h2 class="product_name"> Dark Blue Short Sleeves </h2>
+                    <p>₹249</p>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="product" data-gender="women" , data-categories="kurti" , data-price="340">
+                    <img src="Images/Women Dress Collection/Women kurti -2.jpg">
+                    <h2 class="product_name"> Green Anarkali </h2>
+                    <p>₹340</p>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="product" data-gender="women" , data-categories="gown" , data-price="729">
+                    <img src="Images/New Arrival/Photo-1.jpg">
+                    <h2 class="product_name"> Yellow Satin Formal Gown </h2>
+                    <p>₹729</p>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="product" data-gender="men" , data-categories="jean" , data-price="499">
+                    <img src="Images/Men Dress collection/Baggy Jeans.jpeg">
+                    <h2 class="product_name"> Denim Jean Straight Fit </h2>
+                    <p>₹499</p>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="product" data-gender="men" , data-categories="coat" , data-price="680">
+                    <img src="Images/Most Wanted/photo-4.jpeg">
+                    <h2 class="product_name"> Darbar WaistCoat </h2>
+                    <p>₹680</p>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="product" data-gender="kids" , data-categories="gown" , data-price="400">
+                    <img src="Images/Kids Dress Collection/kid sleeveless party dress.webp">
+                    <h2 class="product_name"> Kids Sleeveless Gown </h2>
+                    <p>₹400</p>
+                </div>
+
+                <!-- Product 13 -->
+                <div class="product" data-gender="men" , data-categories="casual" , data-price="600">
+                    <img src="Images/New Arrival/Photo-3.jpg">
+                    <h2 class="product_name"> Deelmo Blend Casual Shirt </h2>
+                    <p>₹600</p>
+                </div>
+
+                <!-- Product 14 -->
+                <div class="product" data-gender="men" , data-categories="jean" , data-price="599">
+                    <img src="Images/Men Dress collection/Bootcut Jean.jpeg">
+                    <h2 class="product_name"> Men Bootcut Jean </h2>
+                    <p>₹599</p>
+                </div>
+
+                <!-- Product 15 -->
+                <div class="product" data-gender="women" , data-categories="jean" , data-price="799">
+                    <img src="Images/Women Dress Collection/superlow loose Jeans.jpeg">
+                    <h2 class="product_name"> Women Super Low Loose Jeans </h2>
+                    <p>₹799</p>
+                </div>
+
+                <!-- Product 16 -->
+                <div class="product" data-gender="women" , data-categories="jacket" , data-price="1399">
+                    <img src="Images/Women Dress Collection/Women Winter Jacket .jpeg">
+                    <h2 class="product_name"> Black Puffer Jacket </h2>
+                    <p>₹1399</p>
+                </div>
+
+                <!-- Product 17 -->
+                <div class="product" data-gender="men" , data-categories="coat" , data-price="1499">
+                    <img src="Images/Men Dress collection/Slim fit Coat.jpg">
+                    <h2 class="product_name"> Slim fit Coat </h2>
+                    <p>₹1499</p>
+                </div>
+
+                <!-- Product 18 -->
+                <div class="product" data-gender="men" , data-categories="casual" , data-price="560">
+                    <img src="Images/Men Dress collection/Men Casual -3.jpeg">
+                    <h2 class="product_name"> Brown Casual Shirt </h2>
+                    <p>₹560</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- footer section  -->
+    <footer class=" bg-gray-300 flex flex-col items-center justify-center gap-4 text-center p-5" id="footer">
+
+        <h2 class="text-2xl font-bold">
+            Nostra
+        </h2>
+
+        <p>
+            © 2026-2027 Nostra™. All Rights Reserved.
+            Built with Html, Tailwind CSS, Css, JavaScript.
+        </p>
+
+        <div class="flex gap-4 items-center justify-center">
+            <img src="Images/Logos/footer logo/Whatsapp Logo.png" alt="Whatsapp Logo" class="w-6">
+
+            <img src="Images/Logos/footer logo/Instagram Logo.png" alt="Instagram Logo" class="w-6">
+
+            <img src="Images/Logos/footer logo/Linked in Logo.png" alt="Linked In Logo" class="w-6">
+
+            <img src="Images/Logos/footer logo/Facebook Logo.png" alt="Facebook Logo" class="w-6">
+        </div>
+
+    </footer>
+
+</body>
+<script src="collection.js"></script>
+
+</html>
